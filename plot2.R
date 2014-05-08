@@ -1,6 +1,5 @@
-# Basic idea to read the file modified from Peter Huber's post
+# Basic idea to read the file modified from Peter H's post
 # on the discussion forums
-# https://class.coursera.org/exdata-002/forum/profile?user_id=3051102
 # https://class.coursera.org/exdata-002/forum/thread?thread_id=19
 # Thanks Peter
 
