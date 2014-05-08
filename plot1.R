@@ -34,6 +34,6 @@ df$Time <- paste(df$Date, df$Time, sep=" ")
 df$Time <- strptime(df$Time, "%Y-%m-%d %H:%M:%S")
 
 # output to png the Global Active Power histogram plot
-png("plot1.png")
+png("plot1.png", width = 504, height = 504, bg = "transparent")
 hist(df$Global_active_power, main = "Global Active power", col = "red", xlab = "Global Active Power (kilowatts)", )
 dev.off
