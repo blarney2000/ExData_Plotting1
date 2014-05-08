@@ -23,7 +23,7 @@ close(f)
 
 # now we create a text connection and load data
 tc<-textConnection(greped,"rt") 
-df<-read.table(tc,sep=";",header=TRUE, col.names = colnames(read.table(
+df<-read.table(tc,sep=";", col.names = colnames(read.table(
   "household_power_consumption.txt.gz",
   nrow = 1, header = TRUE, sep=";")), na.strings = "?")
 
