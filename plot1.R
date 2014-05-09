@@ -32,12 +32,20 @@ df$Date <- as.Date(df$Date , "%d/%m/%Y")
 df$Time <- paste(df$Date, df$Time, sep=" ")
 df$Time <- strptime(df$Time, "%Y-%m-%d %H:%M:%S")
 
-# Using transparent background here to match the images in the reference repository
-# and images on the project rubric have a transparent background
-# Discussion @ https://class.coursera.org/exdata-002/forum/thread?thread_id=46
-# But in peer review I plan to give full credit for both white and transparent background
 
 # output to png the Global Active Power histogram plot
-png("plot1.png", width = 504, height = 504, bg = "transparent")
+# I am using default white background for the default named images even though it does not match
+# the exact images provided. 
+# Also I am using size 480 x 480 as specified in the rubric. The images provided are 504 x 504
+# So in that sense it is not an exact match also.
+# I will create another set of images which have a transparent background and
+# and the 504 x 504 size and append a -T to the name. These are the ones which match
+# exactly
+
+png("plot1.png", width = 480, height = 480)
+hist(df$Global_active_power, main = "Global Active power", col = "red", xlab = "Global Active Power (kilowatts)", )
+dev.off
+
+png("plot1-T.png", width = 504, height = 504, bg = "transparent")
 hist(df$Global_active_power, main = "Global Active power", col = "red", xlab = "Global Active Power (kilowatts)", )
 dev.off
