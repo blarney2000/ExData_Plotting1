@@ -32,12 +32,16 @@ df$Date <- as.Date(df$Date , "%d/%m/%Y")
 df$Time <- paste(df$Date, df$Time, sep=" ")
 df$Time <- strptime(df$Time, "%Y-%m-%d %H:%M:%S")
 
+# Using transparent background here to match the images in the reference repository
+# and images on the project rubric have a transparent background
+# Discussion @ https://class.coursera.org/exdata-002/forum/thread?thread_id=46
+# But in peer review I plan to give full credit for both white and transparent background
+
 # output to png the Energy Sub Metering vs vs Days plot
 png("plot4.png", width = 504, height = 504, bg = "transparent")
 par(mfrow = c(2, 2))
-#par(mar = c(4,4,1,1))
 with(df, {
-  plot(Time, Global_active_power, type = "l", ylab = "Global Active Power")
+  plot(Time, Global_active_power, type = "l", xlab = "", ylab = "Global Active Power")
 
   plot(Time, Voltage, xlab = "datetime", type = "l", ylab = "Voltage")
 
