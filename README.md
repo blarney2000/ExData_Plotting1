@@ -10,6 +10,16 @@ would create a bit depth which would match the provided images exactly.
 This code is for the project 1 of [Exploratory Data Analysis](https://class.coursera.org/exdata-002/).
 More details about the project can be found at the following GitHub repository: [https://github.com/rdpeng/ExData_Plotting1](https://github.com/rdpeng/ExData_Plotting1)
 
+## Code to generate the images
+
+```
+R CMD BATCH plot1.R
+R CMD BATCH plot2.R
+R CMD BATCH plot3.R
+R CMD BATCH plot4.R
+```
+
+Outputs plot1.png, plot1-T.png, plot2.png, plot2-T.png, plot3.png, plot3-T.png, plot4.png, plot4-T.png
 
 ## My Plot 1
 ![plot 1](plot1.png)
