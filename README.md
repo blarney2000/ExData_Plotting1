@@ -2,12 +2,12 @@
 
 I have put code for generating images with default background and
 transparent background. The ones with transparent background are of 
-size 504 x 504 to get close to images provided. I think on system this
+size 504 x 504 to get close to images provided. I think on some systems this
 would create a bit depth which would match the provided images exactly.
 
 ## Background
 
-This code is for the project 1 of [Exploratory Data Analysis](https://class.coursera.org/exdata-002/)
+This code is for the project 1 of [Exploratory Data Analysis](https://class.coursera.org/exdata-002/).
 More details about the project can be found at the following GitHub repository: [https://github.com/rdpeng/ExData_Plotting1](https://github.com/rdpeng/ExData_Plotting1)
 
 
