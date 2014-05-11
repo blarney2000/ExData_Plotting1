@@ -46,6 +46,7 @@ png("plot1.png", width = 480, height = 480)
 hist(df$Global_active_power, main = "Global Active power", col = "red", xlab = "Global Active Power (kilowatts)", )
 dev.off
 
-png("plot1-T.png", width = 504, height = 504, bg = "transparent")
-hist(df$Global_active_power, main = "Global Active power", col = "red", xlab = "Global Active Power (kilowatts)", )
-dev.off
+# Transparency Code commented out
+#png("figure/plot1-T.png", width = 504, height = 504, bg = "transparent")
+#hist(df$Global_active_power, main = "Global Active power", col = "red", xlab = "Global Active Power (kilowatts)", )
+#dev.off

@@ -47,6 +47,7 @@ png("plot2.png", width = 480, height = 480)
 plot(df$Time, df$Global_active_power, xlab = "", ylab = "Global Active Power (kilowatts)", type = "l")
 dev.off
 
-png("plot2-T.png", width = 504, height = 504, bg = "transparent")
-plot(df$Time, df$Global_active_power, xlab = "", ylab = "Global Active Power (kilowatts)", type = "l")
-dev.off
+# Transparency code commented out
+#png("figure/plot2-T.png", width = 504, height = 504, bg = "transparent")
+#plot(df$Time, df$Global_active_power, xlab = "", ylab = "Global Active Power (kilowatts)", type = "l")
+#dev.off
