@@ -34,6 +34,7 @@ R CMD BATCH plot4.R
 ```
 
 Outputs: plot1.png, plot2.png, plot3.png, plot4.png
+
 Outputs if transparency code is uncommented: plot1.png, plot1-T.png, plot2.png, plot2-T.png, plot3.png, plot3-T.png, plot4.png, plot4-T.png.
 
 ## My Plot 1
