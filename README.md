@@ -5,6 +5,18 @@ transparent background. The ones with transparent background are of
 size 504 x 504 to get close to images provided. I think on some systems this
 would create a bit depth which would match the provided images exactly.
 
+Dataset: [Electric power consumption](https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip)
+
+As the data set is large and I prefer to use files in gzip format, I unzipped the file and then compressed it using gzip command.
+I kept the file in the gzip format and use native R functions which can read from the gzip format.
+
+```
+wget https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip
+unzip exdata%2Fdata%2Fhousehold_power_consumption.zip
+rm exdata%2Fdata%2Fhousehold_power_consumption.zip
+gzip household_power_consumption.txt
+```
+
 ## Background
 
 This code is for the project 1 of [Exploratory Data Analysis](https://class.coursera.org/exdata-002/).
