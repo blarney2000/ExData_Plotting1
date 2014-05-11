@@ -1,4 +1,4 @@
-## Comments
+## Assumptions
 
 I have put code for generating images with default background and transparent background. The transparency code is commented out. The ones with transparent background are of size 504 x 504 to get close to images provided. I think on some systems this would create a bit depth which would match the provided images exactly.
 
@@ -24,7 +24,7 @@ gzip household_power_consumption.txt
 This code is for the project 1 of [Exploratory Data Analysis](https://class.coursera.org/exdata-002/).
 More details about the project can be found at the following GitHub repository: [https://github.com/rdpeng/ExData_Plotting1](https://github.com/rdpeng/ExData_Plotting1)
 
-## Code to generate the images
+## Steps to recreate the images
 
 ```
 R CMD BATCH plot1.R
