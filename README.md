@@ -10,7 +10,7 @@ As the data set is large and I prefer to keep the data file in a compressed form
 I kept the file in the gzip format as there are native R functions which can read from the gzip format. I find this format easy to work with especially
 when I am dealing with large files. There may be ways to work directly with zip files but I am not familar with them.
 
-Here is the code to do that. I assume that this gzipped data file is available in the working directory.
+Here is the code on a linux system to do that. I assume that this gzipped data file is available in the working directory.
 
 ```
 wget https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip
